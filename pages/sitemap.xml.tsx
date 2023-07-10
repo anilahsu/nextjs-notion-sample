@@ -16,7 +16,7 @@ export const getServerSideProps: GetServerSideProps = async ({ req, res }) => {
   }
 
   const siteMap = await getSiteMap()
-
+  console.log("siteMap", siteMap)
   // cache for up to 8 hours
   res.setHeader(
     'Cache-Control',
