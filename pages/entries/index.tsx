@@ -4,7 +4,8 @@ import { NotionPage } from '@/components/NotionPage'
 import { domain } from '@/lib/config'
 import { resolveNotionPage } from '@/lib/resolve-notion-page'
 
-export const entryDatabaseId = "847ed418db894d1fb228f52446994c5e"
+export const entryDatabaseId = '847ed418db894d1fb228f52446994c5e'
+
 export const getStaticProps = async () => {
   try {
     const props = await resolveNotionPage(domain, entryDatabaseId)
